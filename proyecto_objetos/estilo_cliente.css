@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Para ocupar toda la altura de la ventana */
+}
+
+.header {
+    height: 90px;
+    background: #000000;
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 26px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav-cliente,
+.nav-lista,
+.nav-inicio {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 10px; /* Espacio entre los botones */
+}
+
+.nav-cliente:hover,
+.nav-lista:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+}
+
+.content {
+    flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+    overflow: hidden; /* Oculta el desbordamiento del iframe */
+}
